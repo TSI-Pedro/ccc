@@ -40,7 +40,7 @@ def foward_photo(message, destination_chat):
         )
         return
     except FloodWait as e:
-        print(f"..FloodWait {e.value} seconds..")
+        # print(f"..FloodWait {e.value} seconds..")
         time.sleep(e.value)
     except Exception as e:
         print(f"trying again... Due to: {e}")
